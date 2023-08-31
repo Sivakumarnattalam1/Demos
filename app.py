@@ -2,7 +2,7 @@ from flask import *
 
 app = Flask(__name__)
 
-@app.route('/login',methods = ['GET'])
+@app.route('/',methods = ['GET'])
 def login():
       uname=request.args.get('uname')
       passwrd=request.args.get('pass')
